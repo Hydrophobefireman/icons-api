@@ -5,8 +5,8 @@ Use folder name and file extension specific [Material-icon](https://github.com/P
 _Inspired by [vscode-icons-js](https://github.com/dderevjanik/vscode-icons-js) and [file-icons-js](https://github.com/websemantics/file-icons-js)_
 
 ## Usage
-https://icons.api.hpfm.dev/material?mode={mime|extension}&name={image/png|img.png}
+https://icons.api.hpfm.dev/api/material?mode={mime|extension}&name={image/png|img.png}
 
 
-https://icon.api.hpfm.dev/vs?mode={mime|extension}&name={image/png|img.png}
+https://icon.api.hpfm.dev/api/vs?mode={mime|extension}&name={image/png|img.png}
 ```
