@@ -10,12 +10,14 @@ export default function (req: VercelRequest, res: VercelResponse) {
   if (mode === "extension") {
     return res
       .setHeader("content-type", "image/svg+xml")
+      .setHeader("cache-control", "max-age=31536000, immutable")
       .send(getMaterialFileIcon(name));
   }
   if (mode === "mime") {
     const fn = `index${mimes[name] || ".bin"}`;
     return res
       .setHeader("content-type", "image/svg+xml")
+      .setHeader("cache-control", "max-age=31536000, immutable")
       .send(getMaterialFileIcon(fn));
   }
   return res.status(400).json({error: "Invalid request"});
